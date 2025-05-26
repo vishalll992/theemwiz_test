@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency - Creative Design Studio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional styles for elements without proper class definitions */
+    .stat-card {
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: rgba(8, 12, 17, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .stat-card h3 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .section-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #dc3545;
+      margin-bottom: 1rem;
+    }
+    
+    .main-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    
+    .description {
+      color: #6c757d;
+      margin-bottom: 1.5rem;
+    }
+    
+    .read-more {
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 2rem;
+    }
+    
+    .how-we-work-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #dc3545;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    
+    .how-we-work-text {
+      font-size: 1.1rem;
+      align-self: center;
+    }
+    
+    .underline {
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 3rem 0;
+    }
+    
+    .map-section {
+      height: 400px;
+      background-color: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .contact-card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+    }
+    
+    .submit-btn {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+      background-color: #c82333;
+    }
+    
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 4rem 0 2rem;
+    }
+    
+    .footer-title {
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-links a {
+      display: block;
+      color: #adb5bd;
+      text-decoration: none;
+      margin-bottom: 0.75rem;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+    }
+    
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      color: #dc3545;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      margin-top: 3rem;
+      color: #adb5bd;
+    }
+  </style>
+</head>
+
+<body class="bg-dark text-white">
+  <!-- Header Section -->
+  <header class="container py-4">
+    <div class="row align-items-center">
+      <div class="col-md-3">
+        <h1 class="fw-bold fs-4 mb-0">Agency</h1>
+      </div>
+      <div class="col-md-9">
+        <nav class="d-flex justify-content-end">
+          <a href="#" class="text-white text-decoration-none me-4">About</a>
+          <a href="#" class="text-white text-decoration-none me-4">Services</a>
+          <a href="#" class="text-white text-decoration-none me-4">Pricing</a>
+          <a href="#" class="text-white text-decoration-none me-4">Blog</a>
+          <a href="#" class="btn btn-outline-light rounded-pill px-4">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <p class="text-uppercase fw-bold text-secondary mb-2">MODERN STUDIO</p>
+        <h2 class="display-4 fw-bold mb-4">We're Help<br>To Build Your<br><span class="text-danger">Dream Project</span></h2>
+        <p class="lead mb-4">Agency provides a full service range including technical skills, design, business understanding.</p>
+        <div class="d-flex align-items-center mb-5">
+          <a href="#" class="btn btn-danger rounded-pill px-4 me-3">HOW WE WORK</a>
+          <a href="#" class="text-white text-decoration-none">Contact Us</a>
+        </div>
+        <div class="d-flex align-items-center">
+          <!-- <img src="https://via.placeholder.com/40" alt="Client testimonial avatar" class="rounded-circle me-3"> -->
+          <div>
+            <p class="mb-0 fw-bold">"Put themselves in the merchant's shoes"</p>
+            <span class="text-secondary">Meta Inc.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 position-relative mt-5 mt-lg-0">
+        <img src="img\firstpage.png" class="img-fluid rounded" alt="Laptop workspace">
+        <!-- <img src="https://via.placeholder.com/140x180" class="position-absolute bottom-0 start-0 img-fluid rounded" style="transform: translateY(25%);" alt="Team member portrait"> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="bg-light text-dark py-5">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-2 col-6 text-center mb-4 mb-md-0">
+          <img src="img/Digitalside.png" alt="DigitalSide logo" class="img-fluid">
+        </div>
+        <div class="col-md-2 col-6 text-center mb-4 mb-md-0">
+          <img src="img/Vortex.png" alt="Vortex logo" class="img-fluid">
+        </div>
+        <div class="col-md-2 col-6 text-center mb-4 mb-md-0">
+          <img src="img/TravelE.png" alt="Travel Explorer logo" class="img-fluid">
+        </div>
+        <div class="col-md-2 col-6 text-center mb-4 mb-md-0">
+          <img src="img/fuzion.png" alt="Fuzion logo" class="img-fluid">
+        </div>
+        <div class="col-md-2 col-6 text-center mb-4 mb-md-0">
+          <img src="img/mediaF.png" alt="MediaFury logo" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-light text-dark py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 position-relative mb-5 mb-lg-0">
+          <img src="img\secondpage.png" alt="Modern workspace environment" class="img-fluid rounded shadow">
+          <!-- <img src="https://via.placeholder.com/150x150?text=Person" alt="Team member portrait" class="position-absolute bottom-0 end-0 rounded-circle border border-white border-3" style="transform: translate(25%, 25%);"> -->
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <h4 class="text-uppercase fw-bold text-secondary mb-2">ABOUT</h4>
+          <h2 class="display-6 fw-bold mb-4">An Experience Design Agency</h2>
+          <p class="lead mb-4">
+            Provides a full service range.<br>
+            Ability to put themselves in the merchant's shoes. It is meant to partner on the long run,
+            and work as an extension of the merchant's team.
+          </p>
+          <a href="#" class="btn btn-dark rounded-pill px-4">ABOUT US</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats and How We Work Section -->
+  <section class="container py-5">
+    <!-- Stats Section -->
+    <div class="row text-center mb-5">
+      <div class="col-md-4 mb-3">
+        <div class="stat-card">
+          <h3>42+</h3>
+          <p>Years of experience</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="stat-card">
+          <h3>73+</h3>
+          <p>Agency members</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="stat-card">
+          <h3>5,000+</h3>
+          <p>Projects complete</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- How We Work Section -->
+    <div class="row align-items-start">
+      <div class="col-md-6">
+        <div class="section-title">HOW WE WORK</div>
+        <h2 class="main-heading">Making Your Projects<br>Look Awesome</h2>
+        <div class="description">
+          Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.
+        </div>
+        <a href="#" class="btn btn-link text-white p-0 read-more">Read More</a>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex mb-4">
+          <div class="how-we-work-number me-3">1</div>
+          <div class="how-we-work-text">Full service range including</div>
+        </div>
+        <div class="d-flex mb-4">
+          <div class="how-we-work-number me-3">2</div>
+          <div class="how-we-work-text">Technical skills, design, business</div>
+        </div>
+        <div class="d-flex mb-4">
+          <div class="how-we-work-number me-3">3</div>
+          <div class="how-we-work-text">Themselves in the merchant's</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom line -->
+    <div class="underline"></div>
+  </section>
+
+  <!-- Latest Work Section -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h3 class="fw-bold display-6">Latest Work</h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-dark text-white border-0">
+            <div class="position-relative overflow-hidden">
+              <img src="img/sofa.png" class="img-fluid rounded" alt="Modern sofa design in green color">
+              <span class="badge bg-light text-dark position-absolute top-0 end-0 m-2">Design</span>
+            </div>
+            <h5 class="mt-3">SOFA</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-dark text-white border-0">
+            <div class="position-relative overflow-hidden">
+              <img src="img/keyboard.png" class="img-fluid rounded" alt="Modern keyboard design">
+              <span class="badge bg-light text-dark position-absolute top-0 end-0 m-2">Branding</span>
+            </div>
+            <h5 class="mt-3">KeyBoard</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-dark text-white border-0">
+            <div class="position-relative overflow-hidden">
+              <img src="img/workM.png" class="img-fluid rounded" alt="Digital media workspace">
+              <span class="badge bg-light text-dark position-absolute top-0 end-0 m-2">Illustration</span>
+            </div>
+            <h5 class="mt-3">Work Media</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-dark text-white border-0">
+            <div class="position-relative overflow-hidden">
+              <img src="img/DDDone.png" class="img-fluid rounded" alt="DDDone project interface">
+              <span class="badge bg-light text-dark position-absolute top-0 end-0 m-2">Motion</span>
+            </div>
+            <h5 class="mt-3">DDDone</h5>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-outline-light rounded-pill px-4">Explore More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-light text-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 mb-4 mb-md-0">
+          <p class="text-danger fw-bold mb-1">GET STARTED</p>
+          <h4 class="fw-bold mb-3">We Help Companies Move Faster</h4>
+          <a href="#" class="btn btn-danger rounded-pill px-4">Contact Us</a>
+        </div>
+        <div class="col-md-5 text-center text-md-end">
+          <img src="https://img.freepik.com/premium-photo/portrait-attractive-professional-asian-business-woman-look-camera-outside-office-building_38052-1717.jpg" alt="Professional woman in business attire" class="img-fluid" style="max-height: 200px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h3 class="fw-bold display-6">Team of Designers and Developers</h3>
+        <p class="text-white-50">Our talented team members</p>
+      </div>
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <img src="img/Tmem1.png" class="rounded-circle mb-3" width="100" height="100" alt="Azah Anyeni - Designer">
+          <h5>Azah Anyeni</h5>
+          <p class="text-white-50">Designer</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/Tmem2.png" class="rounded-circle mb-3 border border-danger border-3" width="100" height="100" alt="Roelof Bekkenk - React Developer">
+          <h5>Roelof Bekkenk</h5>
+          <p class="text-white-50">React Developer</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/Tmem3.png" class="rounded-circle mb-3" width="100" height="100" alt="Leonardo Oliveira - Illustrator">
+          <h5>Leonardo Oliveira</h5>
+          <p class="text-white-50">Illustrator</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/Tmem4.png" class="rounded-circle mb-3" width="100" height="100" alt="Izabella Tabakova - Product Designer">
+          <h5>Izabella Tabakova</h5>
+          <p class="text-white-50">Product Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-5 bg-light text-dark">
+    <div class="container">
+      <p class="text-uppercase text-danger fw-bold">Pricing</p>
+      <h2 class="fw-bold mb-5">Check Our <br> Pricing Plans</h2>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100 border-light">
+            <small class="text-uppercase fw-bold text-muted mb-2">Consultation</small>
+            <h3 class="fw-bold mb-2">Free</h3>
+            <p class="text-muted mb-4">Your digital marketing efforts, instead of handling in-house.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">🔘 Brand Design</li>
+              <li class="mb-2">🔘 Market Analysis</li>
+              <li class="mb-2">🔘 Production</li>
+            </ul>
+            <a href="#" class="btn btn-outline-dark rounded-pill mt-auto">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Card 2 (highlighted) -->
+        <div class="col-md-4">
+          <div class="card p-4 shadow-lg h-100 border-light bg-white text-dark position-relative">
+            <span class="badge bg-danger text-white position-absolute top-0 start-50 translate-middle mt-2 px-3 py-1 rounded-pill">Popular</span>
+            <small class="text-uppercase fw-bold text-muted mb-2">Design</small>
+            <h3 class="fw-bold mb-2">$1500</h3>
+            <p class="text-muted mb-4">Provide your business with a variety of digital solutions to promote.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">🔴 Brand Design</li>
+              <li class="mb-2">🔴 Market Analysis</li>
+              <p class="text-muted mb-4">Help you hit your marketing goals and grow your business.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">🔘 Brand Design</li>
+              <li class="mb-2">🔘 Market Analysis</li>
+              <li class="mb-2">🔘 Production</li>
+            </ul>
+            <a href="#" class="btn btn-outline-dark rounded-pill mt-auto">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light text-dark">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-5">
+          <p class="text-uppercase text-danger fw-bold">FAQ</p>
+          <h3 class="fw-bold mb-4">Frequently Asked <br> Questions</h3>
+          <p class="text-muted mb-4">A digital agency is a business you hire to outsource your digital marketing efforts,
+            instead of handling in-house.</p>
+          <a href="#" class="text-decoration-underline text-dark fw-bold">Contact Us</a>
+        </div>
+        <div class="col-md-7">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                  aria-expanded="true">
+                  A digital agency is a business
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Digital marketing efforts, instead of handling in-house. They can provide your business with a variety
+                  of digital solutions to promote your product or service online and help you hit your marketing goals
+                  and grow your business.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2" aria-expanded="false">
+                  Hire to outsource your digital
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Agencies provide expert teams and tools to effectively run your campaigns and monitor progress.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3" aria-expanded="false">
+                  Marketing efforts
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Marketing efforts include branding, content creation, SEO, and ad campaigns tailored to your audience.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4" aria-expanded="false">
+                  Can provide your business
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  With creative and technical support to scale your digital presence effectively.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <div class="map-section position-relative">
+    <div class="contact-card">
+      <h5 class="mb-4 fw-bold">Get In Touch</h5>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your email" />
+        </div>
+        <div class="mb-3">
+          <select class="form-select">
+            <option selected disabled>Subject</option>
+            <option>General Inquiry</option>
+            <option>Support</option>
+            <option>Feedback</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">SUBMIT NOW</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-3 mb-4">
+          <div class="footer-title">Agency</div>
+        </div>
+        <div class="col-md-3 mb-4 footer-links">
+          <div class="footer-title">MENU</div>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-md-3 mb-4 footer-links">
+          <div class="footer-title">SERVICE</div>
+          <a href="#">Design</a>
+          <a href="#">Development</a>
+          <a href="#">Marketing</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="footer-title">Social</div>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom text-center text-md-start">
+        <div class="col-md-6">
+          Copyright © 2022 Vishal, All Rights Reserved.
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="me-3 text-decoration-none text-muted">Terms of Use</a>
+          <a href="#" class="text-decoration-none text-muted">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+             
+(Content truncated due to size limit. Use line ranges to read in chunks)
